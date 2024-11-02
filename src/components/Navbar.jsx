@@ -4,6 +4,7 @@ const Navbar = (props) => {
   const toggleMode = (e) => {
     e.preventDefault();
     props.setGeceModu(!props.geceModu);
+    document.querySelector(".App").classList.toggle("dark-mode");
   };
 
   return (

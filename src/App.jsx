@@ -10,7 +10,7 @@ const App = () => {
   const [geceModu, setGeceModu] = useDarkMode(false);
 
   return (
-    <div className={`App ${geceModu ? 'dark-mode' : ''}`}>
+    <div className="App">
       <Navbar geceModu={geceModu} setGeceModu={setGeceModu} />
       <Charts coinData={coinData} />
     </div>
